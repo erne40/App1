@@ -1,0 +1,3 @@
+My first App using PyQt5
+
+Hope this doesn't crash too often...
