@@ -1,0 +1,23 @@
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+
+import sys
+
+class MainWindow(QMainWindow): # QMainWindow
+    def __init__(self, *args, **kwargs):
+        super(MainWindow,self).__init__(*args,**kwargs)
+        
+        self.setWindowTitle('Aplicacion1')
+
+        label= QLabel('Primer App') # Widget
+        label.setAlignment(Qt.AlignCenter)
+        
+        self.setCentralWidget(label)
+
+app= QApplication(sys.argv) # QApplication
+window = MainWindow()
+
+window.show()
+
+app.exec_() # Event Loop
